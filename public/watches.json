@@ -1,0 +1,88 @@
+  {
+    "watches" : [
+          {
+            "id": "1-watches",
+            "title": "WATCH ROYAL",
+            "IMG": "/img/Categories/CategoryWatches/watches1.jpg",
+            "price": "185.00",
+            "category" : "watches"
+          },
+          {
+            "id": "2-watches",
+            "title": "WATCH Y-LONDON",
+            "IMG": "/img/Categories/CategoryWatches/watches2.jpg",
+            "price": "203.00",
+            "category" : "watches"
+          },
+          {
+            "id": "3-watches",
+            "title": "WATCH CASIO HTF",
+            "IMG": "/img/Categories/CategoryWatches/watches3.jpg",
+            "price": "149.00",
+            "category" : "watches"
+          },
+          {
+            "id": "4-watches",
+            "title": "WATCH SKAGEN",
+            "IMG": "/img/Categories/CategoryWatches/watches4.jpg",
+            "price": "213.00",
+            "category" : "watches"
+          },
+          {
+            "id": "5-watches",
+            "title": "WATCH TISSOT VR",
+            "IMG": "/img/Categories/CategoryWatches/watches5.jpg",
+            "price": "193.00",
+            "category" : "watches"
+          },
+          {
+            "id": "6-watches",
+            "title": "WATCH ORIENT FG",
+            "IMG": "/img/Categories/CategoryWatches/watches6.jpg",
+            "price": "207.00",
+            "category" : "watches"
+          },
+          {
+            "id": "7-watches",
+            "title": "WATCH Q&Q DA34",
+            "IMG": "/img/Categories/CategoryWatches/watches7.jpg",
+            "price": "258.00",
+            "category" : "watches"
+          },
+          {
+            "id": "8-watches",
+            "title": "WATCH DEIKO SNK",
+            "IMG": "/img/Categories/CategoryWatches/watches8.jpg",
+            "price": "167.00",
+            "category" : "watches"
+          },
+          {
+            "id": "9-watches",
+            "title": "WATCH Q&Q S23C",
+            "IMG": "/img/Categories/CategoryWatches/watches9.jpg",
+            "price": "179.00",
+            "category" : "watches"
+          },
+          {
+            "id": "10-watches",
+            "title": "WATCH Q&Q F45",
+            "IMG": "/img/Categories/CategoryWatches/watches10.jpg",
+            "price": "143.00",
+            "category" : "watches"
+          },
+          {
+            "id": "11-watches",
+            "title": "WATCH SEICO SP4",
+            "IMG": "/img/Categories/CategoryWatches/watches11.jpg",
+            "price": "137.00",
+            "category" : "watches"
+          },
+          {
+            "id": "12-watches",
+            "title": "VINTAGE RAZOR",
+            "IMG": "/img/Categories/CategoryWatches/watches12.jpg",
+            "price": "256.00",
+            "category" : "watches"
+          }
+    ]
+  }

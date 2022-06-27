@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+
+* {
+    font-family: 'Verdana', sans-serif;
+    font-weight: 300;
+}
+
+.navbar {
+    max-width: 1140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 50px;
+}
+
+.nav-menu {
+    font-weight: bold;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 70%;
+    z-index: 100;
+}
+
+.navLink {
+    color: white;
+}
+
+.navLink:hover, .navLink.active {
+    color: #F5DF11;
+}
+.cart-info {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-info-price {
+    color: white;
+}
+.cart-info-count {
+    position: relative;
+    top: -10px;
+    left: -10px;
+    max-width: 140px;
+    max-height: 40px;
+    border: #F5DF11 solid 1px;
+    border-radius: 50%;
+    text-align: center;
+
+    color: black;
+    background: #F5DF11;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    width: 25px;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+
+/*.input-search {*/
+/*    height: 2rem;*/
+/*    padding: 2px 30px;*/
+/*    background: none;*/
+/*    color: #fff;*/
+/*    margin-left: 0.1rem;*/
+/*    font-size: 16px;*/
+/*    border: 2px solid transparent;*/
+/*}*/
+
+/*.input-search:focus {*/
+/*    border: 2px solid var(--color-first);*/
+/*    border-radius: 0.5rem;*/
+/*}*/
+
+/*.searchBox {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    width: 400px;*/
+/*}*/
+
+/*.icon-search {*/
+/*    position: relative;*/
+/*    left: 30px;*/
+/*}*/
+/*.icon-search-del {*/
+/*    position: relative;*/
+/*    left: -30px;*/
+/*    cursor: pointer;*/
+/*    opacity: 0.2;*/
+/*    transition: all 0.1s ease;*/
+/*}*/
+/*.icon-search-del:hover {*/
+/*    opacity: 0.8;*/
+/*}*/
+
+/* ----- MEDIA QUERIES ----- */
+
+@media screen and (max-width: 740px) {
+    .logo {
+        width: 80%;
+    }
+    .cart-info {
+        width: 10px;
+        text-align: center;
+    }
+    .cart-info-price {
+        display: none;
+    }
+    .cart-info-count {
+        display: none;
+    }
+
+    .hamburger {
+        margin-right: 15px;
+        display: block;
+        z-index: 101;
+        width: 25px;
+    }
+    .hamburger.active {
+        position: fixed;
+        right: 16px;
+        transition: var(--transition);
+    }
+    .hamburger.active:hover {
+        transform: rotate(90deg);
+    }
+    .hamburger:hover .bar {
+        background: #F5DF11;
+    }
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        right: -110%;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(38, 38, 38, 0.98);
+        width: 100%;
+        height: 100%;
+        margin: 0;
+
+        transition: 0.5s;
+        padding-top: 70%;
+        padding-bottom: 70%;
+
+        z-index: 100;
+    }
+    .nav-item {
+        margin: 16px 0;
+    }
+    .nav-menu.active {
+        right: 0;
+    }
+}

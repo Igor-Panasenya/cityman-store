@@ -1,0 +1,33 @@
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-image: url('./img/footer.jpg');
+    background-size: cover;
+    background-position: center left;
+    height: 324px;
+    display: flex;
+    align-items: center;
+}
+
+.footerInfo {
+    margin-left: 130px;
+    font-family: 'Verdana', sans-serif;
+}
+
+.footerInfo p {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 2rem;
+    letter-spacing: 0.1em;
+    text-transform: lowercase;
+    color: #1A1A1A;
+}
+
+/* ----- MEDIA QUERIES ----- */
+
+@media screen and (max-width: 740px) {
+    .footerInfo {
+        margin-left: 2rem;
+    }
+}

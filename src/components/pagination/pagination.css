@@ -1,0 +1,50 @@
+.pagination {
+    max-width: 100%;
+    border-radius: 1rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0;
+
+    margin: 20px auto;
+}
+
+.pagination span {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 100%;
+    background: rgba(196, 196, 196, 0.1);
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    transition: all ease 0.2s;
+}
+
+.pagination span:hover {
+    background: var(--color-btn);
+}
+
+span.arrow {
+    background: rgba(235, 233, 233, 0.2);
+}
+span.arrow.disabled {
+    background: rgba(235, 233, 233, 0.2);
+    opacity: 0.1;
+    cursor: auto;
+}
+span.arrow:hover {
+    background: rgba(235, 233, 233, 0.6);
+}
+span.arrow.disabled:hover {
+    background: rgba(235, 233, 233, 0.2);
+}
+
+span.active {
+    width: 120%;
+    background: var(--color-btn);
+    color: black;
+}

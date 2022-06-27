@@ -1,0 +1,367 @@
+  {
+    "categories" : [
+      {
+        "id" : "1",
+        "title" : "watches",
+        "bg" : "/img/categoriesItems/cat-1.jpg",
+        "url" : "categories/watches",
+        "icon" : "BsWatch",
+        "items" : [
+          {
+            "id": "1",
+            "title": "WATCH ROYAL",
+            "IMG": "/img/Categories/CategoryWatches/watches1.jpg",
+            "cost": "185.00",
+            "category" : "watches"
+          },
+          {
+            "id": "2",
+            "title": "WATCH Y-LONDON",
+            "IMG": "/img/Categories/CategoryWatches/watches2.jpg",
+            "cost": "203.00",
+            "category" : "watches"
+          },
+          {
+            "id": "3",
+            "title": "WATCH CASIO HTF",
+            "IMG": "/img/Categories/CategoryWatches/watches3.jpg",
+            "cost": "149.00",
+            "category" : "watches"
+          },
+          {
+            "id": "4",
+            "title": "WATCH SKAGEN",
+            "IMG": "/img/Categories/CategoryWatches/watches4.jpg",
+            "cost": "213.00",
+            "category" : "watches"
+          },
+          {
+            "id": "5",
+            "title": "WATCH TISSOT VR",
+            "IMG": "/img/Categories/CategoryWatches/watches5.jpg",
+            "cost": "193.00",
+            "category" : "watches"
+          },
+          {
+            "id": "6",
+            "title": "WATCH ORIENT FG",
+            "IMG": "/img/Categories/CategoryWatches/watches6.jpg",
+            "cost": "207.00",
+            "category" : "watches"
+          },
+          {
+            "id": "7",
+            "title": "WATCH Q&Q DA34",
+            "IMG": "/img/Categories/CategoryWatches/watches7.jpg",
+            "cost": "258.00",
+            "category" : "watches"
+          },
+          {
+            "id": "8",
+            "title": "WATCH DEIKO SNK",
+            "IMG": "/img/Categories/CategoryWatches/watches8.jpg",
+            "cost": "167.00",
+            "category" : "watches"
+          },
+          {
+            "id": "9",
+            "title": "WATCH Q&Q S23C",
+            "IMG": "/img/Categories/CategoryWatches/watches9.jpg",
+            "cost": "179.00",
+            "category" : "watches"
+          },
+          {
+            "id": "10",
+            "title": "WATCH Q&Q F45",
+            "IMG": "/img/Categories/CategoryWatches/watches10.jpg",
+            "cost": "143.00",
+            "category" : "watches"
+          },
+          {
+            "id": "11",
+            "title": "WATCH SEICO SP4",
+            "IMG": "/img/Categories/CategoryWatches/watches11.jpg",
+            "cost": "137.00",
+            "category" : "watches"
+          },
+          {
+            "id": "12",
+            "title": "VINTAGE RAZOR",
+            "IMG": "/img/Categories/CategoryWatches/watches12.jpg",
+            "cost": "256.00",
+            "category" : "watches"
+          }]
+      },
+      {
+        "id" : "2",
+        "title" : "ties",
+        "bg" : "/img/categoriesItems/cat-2.jpg",
+        "url" : "categories/ties",
+        "icon" :  "GiTie"
+      },
+      {
+        "id" : "3",
+        "title" : "razors",
+        "bg" : "/img/categoriesItems/cat-3.jpg",
+        "url" : "categories/razors",
+        "icon" :  "GiRazor"
+      }
+    ],
+    "watches" : [
+      {
+        "id": "1",
+        "title": "WATCH ROYAL",
+        "IMG": "/img/Categories/CategoryWatches/watches1.jpg",
+        "cost": "185.00",
+        "category" : "watches"
+      },
+      {
+        "id": "2",
+        "title": "WATCH Y-LONDON",
+        "IMG": "/img/Categories/CategoryWatches/watches2.jpg",
+        "cost": "203.00",
+        "category" : "watches"
+      },
+      {
+        "id": "3",
+        "title": "WATCH CASIO HTF",
+        "IMG": "/img/Categories/CategoryWatches/watches3.jpg",
+        "cost": "149.00",
+        "category" : "watches"
+      },
+      {
+        "id": "4",
+        "title": "WATCH SKAGEN",
+        "IMG": "/img/Categories/CategoryWatches/watches4.jpg",
+        "cost": "213.00",
+        "category" : "watches"
+      },
+      {
+        "id": "5",
+        "title": "WATCH TISSOT VR",
+        "IMG": "/img/Categories/CategoryWatches/watches5.jpg",
+        "cost": "193.00",
+        "category" : "watches"
+      },
+      {
+        "id": "6",
+        "title": "WATCH ORIENT FG",
+        "IMG": "/img/Categories/CategoryWatches/watches6.jpg",
+        "cost": "207.00",
+        "category" : "watches"
+      },
+      {
+        "id": "7",
+        "title": "WATCH Q&Q DA34",
+        "IMG": "/img/Categories/CategoryWatches/watches7.jpg",
+        "cost": "258.00",
+        "category" : "watches"
+      },
+      {
+        "id": "8",
+        "title": "WATCH DEIKO SNK",
+        "IMG": "/img/Categories/CategoryWatches/watches8.jpg",
+        "cost": "167.00",
+        "category" : "watches"
+      },
+      {
+        "id": "9",
+        "title": "WATCH Q&Q S23C",
+        "IMG": "/img/Categories/CategoryWatches/watches9.jpg",
+        "cost": "179.00",
+        "category" : "watches"
+      },
+      {
+        "id": "10",
+        "title": "WATCH Q&Q F45",
+        "IMG": "/img/Categories/CategoryWatches/watches10.jpg",
+        "cost": "143.00",
+        "category" : "watches"
+      },
+      {
+        "id": "11",
+        "title": "WATCH SEICO SP4",
+        "IMG": "/img/Categories/CategoryWatches/watches11.jpg",
+        "cost": "137.00",
+        "category" : "watches"
+      },
+      {
+        "id": "12",
+        "title": "VINTAGE RAZOR",
+        "IMG": "/img/Categories/CategoryWatches/watches12.jpg",
+        "cost": "256.00",
+        "category" : "watches"
+      }],
+    "ties" : [
+      {
+        "id" : "1",
+        "title" : "TIE ROYAL",
+        "IMG" : "/img/Categories/CategoryTies/tie1.jpg",
+        "cost" : "5.50",
+        "category" :"ties"
+      },
+      {
+        "id" : "2",
+        "title" : "TIE Y-LONDON",
+        "IMG" : "/img/Categories/CategoryTies/tie2.jpg",
+        "cost" : "3.68",
+        "category" : "ties"
+      },
+      {
+        "id" : "3",
+        "title" : "TIE CASIO HTF",
+        "IMG" : "/img/Categories/CategoryTies/tie3.jpg",
+        "cost" : "9.70",
+        "category" : "ties"
+      },
+      {
+        "id" : "4",
+        "title" : "TIE SKAGEN",
+        "IMG" : "/img/Categories/CategoryTies/tie4.jpg",
+        "cost" : "3.53",
+        "category" : "ties"
+      },
+      {
+        "id" : "5",
+        "title" : "TIE TISSOT VR",
+        "IMG" : "/img/Categories/CategoryTies/tie5.jpg",
+        "cost" : "3.52",
+        "category" : "ties"
+      },
+      {
+        "id" : "6",
+        "title" : "TIE ORIENT FG",
+        "IMG" : "/img/Categories/CategoryTies/tie6.jpg",
+        "cost" : "7.18",
+        "category" : "ties"
+      },
+      {
+        "id" : "7",
+        "title" : "TIE Q&Q DA34",
+        "IMG" : "/img/Categories/CategoryTies/tie7.jpg",
+        "cost" : "8.83",
+        "category" : "ties"
+      },
+      {
+        "id" : "8",
+        "title" : "TIE DEIKO SNK",
+        "IMG" : "/img/Categories/CategoryTies/tie8.jpg",
+        "cost" : "7.70",
+        "category" : "ties"
+      },
+      {
+        "id" : "9",
+        "title" : "TIE Q&Q S23C",
+        "IMG" : "/img/Categories/CategoryTies/tie9.jpg",
+        "cost" : "9.08",
+        "category" : "ties"
+      },
+      {
+        "id" : "10",
+        "title" : "TIE Q&Q F45",
+        "IMG" : "/img/Categories/CategoryTies/tie10.jpg",
+        "cost" : "3.20",
+        "category" : "ties"
+      },
+      {
+        "id" : "11",
+        "title" : "TIE SEICO SP4",
+        "IMG" : "/img/Categories/CategoryTies/tie11.jpg",
+        "cost" : "7.94",
+        "category" : "ties"
+      },
+      {
+        "id" : "12",
+        "title" : "TIE RAZOR",
+        "IMG" : "/img/Categories/CategoryTies/tie12.jpg",
+        "cost" : "6.71",
+        "category" : "ties"
+      }
+    ],
+    "razors" : [
+      {
+        "id": "1",
+        "title": "RAZORS ROYAL",
+        "IMG": "/img/Categories/CategoryRazors/razor1.jpg",
+        "cost": "85.00",
+        "category" : "razors"
+      },
+      {
+        "id": "2",
+        "title": "RAZORS Y-LONDON",
+        "IMG": "/img/Categories/CategoryRazors/razor2.jpg",
+        "cost": "33.00",
+        "category" : "razors"
+      },
+      {
+        "id": "3",
+        "title": "RAZORS CASIO HTF",
+        "IMG": "/img/Categories/CategoryRazors/razor3.jpg",
+        "cost": "49.00",
+        "category" : "razors"
+      },
+      {
+        "id": "4",
+        "title": "RAZORS SKAGEN",
+        "IMG": "/img/Categories/CategoryRazors/razor4.jpg",
+        "cost": "13.00",
+        "category" : "razors"
+      },
+      {
+        "id": "5",
+        "title": "RAZORS TISSOT VR",
+        "IMG": "/img/Categories/CategoryRazors/razor5.jpg",
+        "cost": "93.00",
+        "category" : "razors"
+      },
+      {
+        "id": "6",
+        "title": "RAZORS ORIENT FG",
+        "IMG": "/img/Categories/CategoryRazors/razor6.jpg",
+        "cost": "47.00",
+        "category" : "razors"
+      },
+      {
+        "id": "7",
+        "title": "RAZORS Q&Q DA34",
+        "IMG": "/img/Categories/CategoryRazors/razor7.jpg",
+        "cost": "58.00",
+        "category" : "razors"
+      },
+      {
+        "id": "8",
+        "title": "RAZORS DEIKO SNK",
+        "IMG": "/img/Categories/CategoryRazors/razor8.jpg",
+        "cost": "67.00",
+        "category" : "razors"
+      },
+      {
+        "id": "9",
+        "title": "RAZORS Q&Q S23C",
+        "IMG": "/img/Categories/CategoryRazors/razor9.jpg",
+        "cost": "79.00",
+        "category" : "razors"
+      },
+      {
+        "id": "10",
+        "title": "RAZORS Q&Q F45",
+        "IMG": "/img/Categories/CategoryRazors/razor10.jpg",
+        "cost": "43.00",
+        "category" : "razors"
+      },
+      {
+        "id": "11",
+        "title": "RAZORS SEICO SP4",
+        "IMG": "/img/Categories/CategoryRazors/razor11.jpg",
+        "cost": "37.00",
+        "category" : "razors"
+      },
+      {
+        "id": "12",
+        "title": "RAZORS RAZOR",
+        "IMG": "/img/Categories/CategoryRazors/razor12.jpg",
+        "cost": "56.00",
+        "category" : "razors"
+      }
+    ]
+  }

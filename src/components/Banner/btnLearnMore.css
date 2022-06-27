@@ -1,0 +1,28 @@
+.btn {
+    font-family: 'Unica One', cursive;
+    letter-spacing: 0.12em;
+    color: #F5DF11;
+    text-decoration: none;
+    border: rgb(241, 227, 24) solid 3px;
+    font-size: 24px;
+    border-radius: 30px;
+    padding: 20px 60px;
+    background-color: transparent;
+    cursor: pointer;
+
+    transition: all ease 0.3s;
+}
+
+.btn:hover {
+    color: rgb(0, 0, 0);
+    background-color: #F5DF11;
+
+    box-shadow: 0px 0px 50px rgba(245, 223, 17, 0.27);
+    transform: translateY(-5px);
+}
+
+@media screen and (max-width: 500px) {
+    .btn {
+        padding: 20px 20px;
+    }
+}

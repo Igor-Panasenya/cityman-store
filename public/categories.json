@@ -1,0 +1,22 @@
+  {
+    "categories" : [
+      {
+        "id" : "1",
+        "title" : "watches",
+        "bg" : "/img/categoriesItems/cat-1.jpg",
+        "url" : "categories/watches"
+      },
+      {
+        "id" : "2",
+        "title" : "ties",
+        "bg" : "/img/categoriesItems/cat-2.jpg",
+        "url" : "categories/ties"
+      },
+      {
+        "id" : "3",
+        "title" : "razors",
+        "bg" : "/img/categoriesItems/cat-3.jpg",
+        "url" : "categories/razors"
+      }
+    ]
+  }

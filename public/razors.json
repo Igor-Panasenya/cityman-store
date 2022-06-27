@@ -1,0 +1,88 @@
+  {
+    "razors" : [
+      {
+        "id": "1-razors",
+        "title": "RAZORS ROYAL",
+        "IMG": "/img/Categories/CategoryRazors/razor1.jpg",
+        "price": "85.00",
+        "category" : "razors"
+      },
+      {
+        "id": "2-razors",
+        "title": "RAZORS Y-LONDON",
+        "IMG": "/img/Categories/CategoryRazors/razor2.jpg",
+        "price": "33.00",
+        "category" : "razors"
+      },
+      {
+        "id": "3-razors",
+        "title": "RAZORS CASIO HTF",
+        "IMG": "/img/Categories/CategoryRazors/razor3.jpg",
+        "price": "49.00",
+        "category" : "razors"
+      },
+      {
+        "id": "4-razors",
+        "title": "RAZORS SKAGEN",
+        "IMG": "/img/Categories/CategoryRazors/razor4.jpg",
+        "price": "13.00",
+        "category" : "razors"
+      },
+      {
+        "id": "5-razors",
+        "title": "RAZORS TISSOT VR",
+        "IMG": "/img/Categories/CategoryRazors/razor5.jpg",
+        "price": "93.00",
+        "category" : "razors"
+      },
+      {
+        "id": "6-razors",
+        "title": "RAZORS ORIENT FG",
+        "IMG": "/img/Categories/CategoryRazors/razor6.jpg",
+        "price": "47.00",
+        "category" : "razors"
+      },
+      {
+        "id": "7-razors",
+        "title": "RAZORS Q&Q DA34",
+        "IMG": "/img/Categories/CategoryRazors/razor7.jpg",
+        "price": "58.00",
+        "category" : "razors"
+      },
+      {
+        "id": "8-razors",
+        "title": "RAZORS DEIKO SNK",
+        "IMG": "/img/Categories/CategoryRazors/razor8.jpg",
+        "price": "67.00",
+        "category" : "razors"
+      },
+      {
+        "id": "9-razors",
+        "title": "RAZORS Q&Q S23C",
+        "IMG": "/img/Categories/CategoryRazors/razor9.jpg",
+        "price": "79.00",
+        "category" : "razors"
+      },
+      {
+        "id": "10-razors",
+        "title": "RAZORS Q&Q F45",
+        "IMG": "/img/Categories/CategoryRazors/razor10.jpg",
+        "price": "43.00",
+        "category" : "razors"
+      },
+      {
+        "id": "11-razors",
+        "title": "RAZORS SEICO SP4",
+        "IMG": "/img/Categories/CategoryRazors/razor11.jpg",
+        "price": "37.00",
+        "category" : "razors"
+      },
+      {
+        "id": "12-razors",
+        "title": "RAZORS RAZOR",
+        "IMG": "/img/Categories/CategoryRazors/razor12.jpg",
+        "price": "56.00",
+        "category" : "razors"
+      }
+    ]
+  }

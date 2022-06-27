@@ -1,0 +1,62 @@
+.sort {
+    position: relative;
+    display: flex;
+    width: 150px;
+    margin-left: 10px;
+}
+.sortListItems {
+    position: absolute;
+    right: 0;
+    top: 20px;
+    margin-top: 10px;
+    background: rgba(84, 84, 84, 0.6);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.09);
+    border-radius: 1rem;
+    padding: 10px;
+    width: 110px;
+    z-index: 1;
+}
+
+.sortListItems ul {
+    overflow: hidden;
+    position: relative;
+}
+
+.sortMain span, .sortItem {
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.1em;
+    text-transform: capitalize;
+}
+
+.sortMain span {
+    margin-left: 10px;
+    color: var(--color-btn);
+    border-bottom: dashed 1px var(--color-btn);
+}
+
+.sortMain {
+    display: flex;
+    align-items: center;
+}
+
+.sortMain h4 {
+    padding: 0;
+}
+
+.sortMain span:hover, .sortItem:hover {
+    cursor: pointer;
+    color: #F5DF11;
+}
+
+.sortItem {
+    text-align: start;
+    margin-top: 7px;
+}
+
+.sortItem.active {
+    color: #F5DF11;
+}

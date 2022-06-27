@@ -1,0 +1,88 @@
+  {
+    "ties" : [
+      {
+        "id" : "1-ties",
+        "title" : "TIE ROYAL",
+        "IMG" : "/img/Categories/CategoryTies/tie1.jpg",
+        "price" : "5.50",
+        "category" :"ties"
+      },
+      {
+        "id" : "2-ties",
+        "title" : "TIE Y-LONDON",
+        "IMG" : "/img/Categories/CategoryTies/tie2.jpg",
+        "price" : "3.68",
+        "category" : "ties"
+      },
+      {
+        "id" : "3-ties",
+        "title" : "TIE CASIO HTF",
+        "IMG" : "/img/Categories/CategoryTies/tie3.jpg",
+        "price" : "9.70",
+        "category" : "ties"
+      },
+      {
+        "id" : "4-ties",
+        "title" : "TIE SKAGEN",
+        "IMG" : "/img/Categories/CategoryTies/tie4.jpg",
+        "price" : "3.53",
+        "category" : "ties"
+      },
+      {
+        "id" : "5-ties",
+        "title" : "TIE TISSOT VR",
+        "IMG" : "/img/Categories/CategoryTies/tie5.jpg",
+        "price" : "3.52",
+        "category" : "ties"
+      },
+      {
+        "id" : "6-ties",
+        "title" : "TIE ORIENT FG",
+        "IMG" : "/img/Categories/CategoryTies/tie6.jpg",
+        "price" : "7.18",
+        "category" : "ties"
+      },
+      {
+        "id" : "7-ties",
+        "title" : "TIE Q&Q DA34",
+        "IMG" : "/img/Categories/CategoryTies/tie7.jpg",
+        "price" : "8.83",
+        "category" : "ties"
+      },
+      {
+        "id" : "8-ties",
+        "title" : "TIE DEIKO SNK",
+        "IMG" : "/img/Categories/CategoryTies/tie8.jpg",
+        "price" : "7.70",
+        "category" : "ties"
+      },
+      {
+        "id" : "9-ties",
+        "title" : "TIE Q&Q S23C",
+        "IMG" : "/img/Categories/CategoryTies/tie9.jpg",
+        "price" : "9.08",
+        "category" : "ties"
+      },
+      {
+        "id" : "10-ties",
+        "title" : "TIE Q&Q F45",
+        "IMG" : "/img/Categories/CategoryTies/tie10.jpg",
+        "price" : "3.20",
+        "category" : "ties"
+      },
+      {
+        "id" : "11-ties",
+        "title" : "TIE SEICO SP4",
+        "IMG" : "/img/Categories/CategoryTies/tie11.jpg",
+        "price" : "7.94",
+        "category" : "ties"
+      },
+      {
+        "id" : "12-ties",
+        "title" : "TIE RAZOR",
+        "IMG" : "/img/Categories/CategoryTies/tie12.jpg",
+        "price" : "6.71",
+        "category" : "ties"
+      }
+    ]
+  }
