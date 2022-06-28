@@ -13,7 +13,7 @@ const Categories = () => {
     useEffect(() =>{
         axios.get('https://628f86d60e69410599de1f6f.mockapi.io/categories')
             .then(( {data} ) => {
-                setCategories(data.categories)
+                setCategories(data)
             })
     }, [])
 
