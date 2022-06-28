@@ -1,10 +1,9 @@
 import React, {useEffect, useState} from 'react';
 import {BsBasket3Fill} from 'react-icons/bs'
-import SimilarProducts from "../components/SimilarProducts/SimilarProducts";
 import {BsCartPlus} from "react-icons/bs";
 import {useDispatch, useSelector} from "react-redux";
 import {addItemCart} from "../redux/slices/cartSlice";
-import MainProducts from "../components/MainProducts/MainProducts";
+import MainProducts from "../components/mainProducts/MainProducts";
 
 const ProductPage = () => {
 
@@ -46,7 +45,6 @@ const ProductPage = () => {
         <div className='container'>
              <div className='mainInfoProduct'>
                         <div className="boxImages">
-
                             <div
                                 style={{backgroundImage: `url(${getActivePhoto})`}}
                                 className='mainIMG'
@@ -72,9 +70,9 @@ const ProductPage = () => {
                                 <button
                                     className=
                                         {isAddedCart ?
-                                            'btn btnBasket active'
+                                            'btn btnCart active'
                                             :
-                                            'btn btnBasket'
+                                            'btn btnCart'
                                         }
                                     onClick={handleClickBuy}
                                     disabled={isAddedCart && 'disabled'}

@@ -1,9 +1,10 @@
 import React from 'react';
-import './productItem.css';
+import './productItem.scss';
 import {ImPriceTag} from 'react-icons/im';
 import {NavLink} from 'react-router-dom';
 import {useDispatch} from "react-redux";
 import {setProduct} from "../../redux/slices/productSlice";
+import Button from "../UI/button/Button";
 
 const ProductItem = (props) => {
 
@@ -30,7 +31,7 @@ const ProductItem = (props) => {
                     <p className="cost">$ {props.Product.price}</p>
 
                     <NavLink to={`/categories/${props.Product.category}/${props.Product.id}-${props.Product.title}`}>
-                        <button onClick={handleClick} className="btn btnBy">
+                        <button onClick={handleClick} className="btn btnMore">
                             more
                         </button>
                     </NavLink>

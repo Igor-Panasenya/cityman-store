@@ -1,18 +1,18 @@
 import React from 'react';
-import Banner from "../components/Banner/Banner";
-import Categories from "../components/category/Categories";
-import MainProducts from "../components/MainProducts/MainProducts";
-import ReviewsProducts from "../components/ReviewsProducts/ReviewsProducts";
+import Banner from "../components/banner/Banner";
+import Categories from "../components/categories/Categories";
+import MainProducts from "../components/mainProducts/MainProducts";
+import ReviewsProducts from "../components/reviewsProducts/ReviewsProducts";
 
 const HomePage = () => {
 
     return (
-        <div>
+        <>
             <Banner />
             <Categories />
             <MainProducts />
             <ReviewsProducts />
-        </div>
+        </>
     );
 };
 

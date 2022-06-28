@@ -1,17 +1,14 @@
-import {React} from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import {GiTeamDowngrade} from "react-icons/gi";
 import {AiOutlineDollarCircle} from "react-icons/ai";
 import {FiCommand} from "react-icons/fi";
 import {GiConfirmed} from "react-icons/gi";
-import {useSelector} from "react-redux";
 
 const AboutPage = () => {
 
     return (
         <div className="container">
-
-
 
             <h1>About Us <GiTeamDowngrade /> </h1>
             <div className="aboutCards">

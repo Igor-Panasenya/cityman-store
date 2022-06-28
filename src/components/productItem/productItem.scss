@@ -1,0 +1,62 @@
+.cardProduct {
+    margin: 0.4rem 0;
+    padding: 0;
+    border-radius: 2rem;
+    height: 360px;
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+    transition: var(--transition);
+
+    &:hover {
+         box-shadow: 0 0 50px rgba(245, 223, 17, 0.27);
+         transform: translateY(-5px);
+    }
+    .mainPhotoProduct {
+        border-radius: 2rem 2rem 0 0;
+        margin: 0;
+        padding: 0;
+        height: 273px;
+        width: 100%;
+        background-position: center center;
+        background-size: cover;
+    }
+    .cardProductContent {
+        background: linear-gradient(10deg, #262626, #1A1A1A);
+        background-size: cover;
+        text-align: center;
+        padding: 0 0.5rem;
+        border-radius: 0 0 2rem 2rem;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        height: 87px;
+
+        .infoCost {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 2rem;
+            margin: 0 20px;
+
+            .iconPrice {
+                color: var(--color-btn-disabled);
+            }
+            .cost {
+                font-family: 'Verdana', sans-serif;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 22px;
+                letter-spacing: 0.1em;
+                color: var(--color-btn-disabled);
+            }
+            .btnMore {
+                font-weight: bold;
+                font-size: 12px;
+                line-height: 15px;
+                letter-spacing: 0.1em;
+                padding: 4px 19px;
+            }
+        }
+    }
+}

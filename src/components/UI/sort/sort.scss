@@ -1,0 +1,67 @@
+.sort {
+    position: relative;
+    display: flex;
+    width: 150px;
+    margin-left: 10px;
+
+    .sortMain {
+        display: flex;
+        align-items: center;
+
+        h4 {
+            padding: 0;
+        }
+        span {
+            margin-left: 10px;
+            color: var(--color-btn);
+            border-bottom: dashed 1px var(--color-btn);
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 17px;
+            letter-spacing: 0.1em;
+            text-transform: capitalize;
+
+            &:hover {
+                cursor: pointer;
+                color: var(--color-btn);
+            }
+        }
+    }
+    .sortListItems {
+        position: absolute;
+        right: 0;
+        top: 20px;
+        margin-top: 10px;
+        background: rgba(84, 84, 84, 0.6);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.09);
+        border-radius: 1rem;
+        padding: 10px;
+        width: 110px;
+        z-index: 1;
+
+        ul {
+            position: relative;
+            overflow: hidden;
+
+            .sortItem {
+                font-style: normal;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 17px;
+                letter-spacing: 0.1em;
+                text-transform: capitalize;
+                text-align: start;
+                margin-top: 7px;
+
+                &:hover {
+                    cursor: pointer;
+                    color: var(--color-btn);
+                }
+                &.active {
+                    color: var(--color-btn);
+                }
+            }
+        }
+    }
+}

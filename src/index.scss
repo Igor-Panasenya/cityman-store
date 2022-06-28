@@ -1,0 +1,374 @@
+@font-face {
+    font-family: "Verdana";
+    src: url("./fonts/Verdana/Verdana.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+html, body {overflow-x: hidden; }
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+* {
+    font-family: 'Verdana', sans-serif;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --color-btn: #F5DF11;
+    --color-btn-disabled: rgba(143, 143, 143, 0.56);
+
+    --transition: all ease 0.3s;
+}
+
+body {
+    background-image: url('./img/bg.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    margin-bottom: 324px;
+
+    .container {
+        box-sizing: border-box;
+        max-width: 1140px;
+        padding: 10px;
+        margin: 2rem auto;
+
+        .row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: 0;
+            padding: 0;
+            gap: 20px;
+        }
+        h1 {
+            font-family: 'Unica One', cursive;
+            font-size: 96px;
+            letter-spacing: 0.12em;
+            margin: 0;
+            color: white;
+        }
+        h2 {
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 36px;
+            line-height: 44px;
+            letter-spacing: 0.2em;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 1rem;
+        }
+        h3 {
+            font-weight: bold;
+            font-size: 18px;
+            text-transform: uppercase;
+            margin: 0;
+            letter-spacing: 0.1em;
+            color: white;
+        }
+        h4 {
+            font-weight: bold;
+            font-size: 18px;
+            letter-spacing: 0.1em;
+            padding-bottom: 0.5rem;
+            margin: 0;
+        }
+        @media screen and (max-width: 600px) {
+            h1 {
+                font-size: 46px;
+            }
+            h2 {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+
+/* ----- CATEGORY PAGE ----- */
+
+.productsNet {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 1.55rem;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.attributes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+    .productsNet {
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 600px) {
+    .attributes {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+}
+
+/* ----- ABOUT PAGE ----- */
+
+.aboutCards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+    margin: 3rem 0;
+
+    .aboutCard {
+          border: solid 2px white;
+          border-radius: 2rem;
+          padding: 1rem;
+          text-align: center;
+          font-size: 18px;
+
+        p {
+            margin-top: 2rem;
+        }
+      }
+}
+@media screen and (max-width: 740px) {
+    .aboutCards {
+        display: flex;
+        flex-direction: column;
+        max-width: 80%;
+        margin: 3rem auto;
+    }
+}
+
+/* ----- CART PAGE ----- */
+
+.btn-clearCart {
+    color: var(--color-btn-disabled);
+    background: transparent;
+    cursor: pointer;
+    font-size: 20px;
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    float: right;
+    transition: var(--transition);
+
+    &:hover {
+        color: var(--color-btn);
+    }
+
+    .disabled:hover {
+        color: var(--color-btn-disabled);
+        cursor: auto;
+    }
+}
+.cart-content {
+    max-width: 100%;
+    padding: 20px;
+    margin: 50px auto;
+
+    .cart-empty {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 380px;
+
+        .cart-GoHome {
+            color: #3d3d3d;
+            transition: all ease 0.3s;
+
+            &:hover {
+                color: var(--color-btn);
+            }
+        }
+    }
+}
+
+/* ----- PRODUCT PAGE ----- */
+
+.mainInfoProduct {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+
+    .boxImages {
+        max-width: 505px;
+
+        * {
+            transition: var(--transition);
+        }
+
+        .mainIMG {
+            width: 500px;
+            height: 500px;
+            border-radius: 2rem;
+            border: solid 2px var(--color-btn);
+            background-size: cover;
+            background-position: center center;
+        }
+
+        .boxImages-icons {
+            display: flex;
+            justify-content: space-between;
+            max-width: 500px;
+            border-radius: 1rem;
+            border: solid 2px var(--color-btn);
+            margin: 1rem 0;
+            padding: 0.5rem;
+
+            li {
+                width: 110px;
+                height: 110px;
+                border-radius: 1rem;
+                border: solid 2px var(--color-btn-disabled);
+                cursor: pointer;
+                background-size: cover;
+                background-position: center center;
+
+                &:hover {
+                    border: solid 2px var(--color-btn);
+                    transform: translateY(-5px);
+                }
+
+                &.active {
+                    border: solid 4px var(--color-btn);
+                }
+            }
+        }
+    }
+
+    .infoProductContent {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+
+        h3 {
+            font-size: 30px;
+            margin-bottom: 1.5rem;
+        }
+
+        p {
+            line-height: 1.8rem;
+            margin-top: 1.5rem;
+        }
+
+        .btnCart {
+            padding: 0.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0.5rem 0;
+            width: 40%;
+            border-radius: 2rem;
+            border: 2px solid var(--color-btn);
+
+            &:hover {
+                transform: translateY(-5px);
+            }
+
+            &.active {
+                color: var(--color-btn-disabled);
+                border: 2px solid var(--color-btn-disabled);
+                background-color: transparent;
+
+                &:hover {
+                    transform: translateY(0);
+                    box-shadow: none;
+                    cursor: auto;
+                }
+
+                .basketIcon {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+.characteristics {
+    li {
+        line-height: 2rem;
+        padding: 0 0.5rem;
+        height: 2rem;
+        display: flex;
+        justify-content: space-between;
+
+        &:nth-child(even) {
+            border-radius: 0.1rem;
+            background: var(--color-btn-disabled);
+        }
+    }
+}
+@media screen and (max-width: 1000px) {
+    .mainInfoProduct {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        margin-bottom: 2rem;
+
+        .boxImages {
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        .infoProductContent .btnCart {
+            width: 200px;
+        }
+    }
+}
+@media screen and (max-width: 600px) {
+    .boxImages {
+        .mainIMG {
+            width: 280px;
+            height: 280px;
+            margin: 0 auto;
+        }
+        .boxImages-icons {
+            max-width: 280px;
+            margin: 1rem auto;
+
+            li {
+                width: 60px;
+                height: 60px;
+
+                &.active {
+                    border: solid 2px var(--color-btn);
+                }
+            }
+        }
+
+    }
+
+    .infoProductContent {
+        h1 {
+            font-size: 40px;
+        }
+
+        h3 {
+            font-size: 26px;
+        }
+    }
+
+    .characteristics-box h2 {
+        font-size: 20px;
+    }
+}

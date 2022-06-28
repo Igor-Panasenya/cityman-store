@@ -4,7 +4,7 @@ import {HiOutlineTrash} from "react-icons/hi";
 import {Link} from "react-router-dom";
 import {useDispatch, useSelector} from "react-redux";
 import {clearCart, removeItemCart} from "../redux/slices/cartSlice";
-import CartList from "../components/cartList/CartList";
+import CartList from "../components/cart/cartList/CartList";
 import {BsFillCartXFill} from "react-icons/bs";
 import {FaFrownOpen} from "react-icons/fa";
 
@@ -14,24 +14,24 @@ const CartPage = () => {
 
     // ОЧИСТКА КОРЗИНЫ
     const dispatch = useDispatch()
-    const delBasketItem = () => {
+    const delCartItems = () => {
         dispatch(clearCart())
     }
 
     return (
         <div className="container">
-            <h1>Basket <BsBasketFill size={50}/> </h1>
+            <h1> Basket <BsBasketFill size={50}/> </h1>
 
             <button
-                className={productsCart.length > 0 ? 'btn-clearBasket' : 'btn-clearBasket disabled'}
-                onClick={delBasketItem}
+                className={productsCart.length > 0 ? 'btn-clearCart' : 'btn-clearCart disabled'}
+                onClick={delCartItems}
                 disabled={productsCart.length > 0 ? '' : 'disabled'}
             >
                 <HiOutlineTrash />
-                Clear basket
+                Clear cart
             </button>
 
-            <div className="basket-content">
+            <div className="cart-content">
 
                 {productsCart.length !== 0
                     ? <CartList productsCart={productsCart}/>

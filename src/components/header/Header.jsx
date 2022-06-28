@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
-import './header.css';
+import './header.scss';
 import {NavLink} from "react-router-dom";
-import LOGO from './img/logo.png';
+import LOGO from '../../img/logo.png';
 import {BsBasket3} from 'react-icons/bs';
 import {useSelector} from "react-redux";
 
@@ -64,24 +64,6 @@ const Header = () => {
                         <span className="bar"></span>
                     </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                 {/*
                                 <div className="searchBox">
                     <BiSearchAlt className="icon-search" size={20}/>
@@ -98,7 +80,6 @@ const Header = () => {
                     }
                 </div>
                 */}
-
             </div>
         </header>
     );

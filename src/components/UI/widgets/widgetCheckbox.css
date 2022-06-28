@@ -1,0 +1,104 @@
+.widget-checkbox {
+    position: relative;
+    width: 250px;
+    max-height: 27px;
+    overflow: hidden;
+}
+.widget-checkbox.active {
+    transition: var(--color-btn-disabled);
+    max-height: 100%;
+}
+
+.widget-checkbox-body {
+    margin-top: 10px;
+}
+
+.widget-checkbox-title {
+    position: relative;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.1em;
+    text-transform: capitalize;
+    cursor: pointer;
+
+    transition: var(--transition);
+}
+
+.widget-checkbox-title::after {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-image: url('/public/img/icon-arrow.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.checkbox-group {
+    display: block;
+    cursor: pointer;
+}
+.checkbox-group {
+    margin-bottom: 10px;
+}
+
+.checkbox__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.1em;
+    text-transform: capitalize;
+}
+
+.checkbox__real {
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    opacity: 0;
+}
+
+.checkbox__real:checked + .checkbox__fake::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    content: '';
+    background-image: url('/public/img/icon-check.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 8px;
+    height: 8px;
+    transform: translate(-50%, -50%);
+}
+
+.checkbox__real:checked + .checkbox__fake + .checkbox__title {
+    border-bottom: solid 2px var(--color-btn);
+}
+
+.checkbox__fake {
+    position: relative;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: 1px solid white;
+    border-radius: 2px;
+    margin-right: 10px;
+    vertical-align: middle;
+    margin-left: 6px;
+}
+
+.widget-checkbox:after {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    content: '';
+    height: 1px;
+    width: 100%;
+    background-color: white;
+}

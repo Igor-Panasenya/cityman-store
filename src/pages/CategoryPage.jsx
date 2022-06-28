@@ -2,15 +2,15 @@ import {useDispatch, useSelector} from "react-redux";
 import {GiRazor} from "react-icons/gi";
 import {GiTie} from "react-icons/gi";
 import {BsWatch} from "react-icons/bs";
-import Search from "../components/Search/Search";
-import Sort from "../components/sort/Sort";
+import Search from "../components/UI/Search/Search";
+import Sort from "../components/UI/sort/Sort";
 import ProductItem from "../components/productItem/ProductItem";
 import React, {useEffect, useState} from "react";
 import axios from "axios";
-import Skeleton from "../components/Skeleton/Skeleton";
-import Pagination from "../components/pagination/Pagination";
+import Skeleton from "../components/UI/Skeleton/Skeleton";
+import Pagination from "../components/UI/pagination/Pagination";
 import {setSort} from "../redux/slices/sortSlice";
-import WidgetCheckbox from "../components/widgets/WidgetCheckbox";
+import WidgetCheckbox from "../components/UI/widgets/WidgetCheckbox";
 
 const CategoryPage = () => {
 
@@ -24,7 +24,10 @@ const CategoryPage = () => {
             .then(response => {
                 setProducts(response.data)
                 setIsLoading(false)
-            })
+            }).catch(function(e) {
+                console.log('Ошибка')
+            setIsLoading(false)
+        })
     }, [])
 
     const [searchQuery, setSearchQuery] = useState('')
@@ -96,18 +99,6 @@ const CategoryPage = () => {
                 }
 
             </div>
-
-            {/*
-                    productsTies.length
-                        ?
-
-                        :
-                        <h2>There are no such products</h2>
-
-                */}
-
-            {/*<Pagination />*/}
-
         </div>
     );
 };

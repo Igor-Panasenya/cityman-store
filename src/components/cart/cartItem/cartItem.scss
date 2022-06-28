@@ -1,0 +1,101 @@
+.cartItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .cartItem-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 40%;
+
+        span {
+            width: 120px;
+            height: 120px;
+            border-radius: 20%;
+            background-size: cover;
+            background-position: center center;
+        }
+        h4 {
+            margin-left: 25px;
+            color: white;
+            transition: var(--transition);
+
+            &:hover {
+                color: var(--color-btn);
+            }
+        }
+    }
+    .cartItem-add-del {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-width: 120px;
+
+        .btn-add-del {
+            display: flex;
+            justify-content: center;
+            border: 2px solid var(--color-btn);
+            color: var(--color-btn);
+            background: transparent;
+            height: 35px;
+            width: 35px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 24px;
+            transition: var(--transition);
+
+            &:hover {
+                background: var(--color-btn);
+                color: black;
+            }
+
+            &.disabled {
+                border: 2px solid var(--color-btn-disabled);
+                color: var(--color-btn-disabled);
+
+                &:hover {
+                    border: 2px solid var(--color-btn-disabled);
+                    color: var(--color-btn-disabled);
+
+                    background: transparent;
+                }
+            }
+        }
+    }
+    .cartItem-price {
+        min-width: 10%;
+    }
+    .cartItem-delete {
+        position: relative;
+        color: var(--color-btn-disabled);
+        transition: var(--transition);
+        cursor: pointer;
+
+        &:hover {
+            color: var(--color-btn);
+        }
+    }
+}
+
+/* ----- MEDIA QUERIES ----- */
+@media screen and (max-width: 740px) {
+    .cartItem {
+        display: flex;
+        flex-direction: column;
+
+        .cartItem-info {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+
+            h4 {
+                margin: 1rem auto;
+            }
+        }
+        .cartItem-price {
+            margin: 0.5rem auto;
+            font-size: 24px;
+        }
+    }
+}

@@ -1,0 +1,172 @@
+.navbar {
+    max-width: 1140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 50px;
+
+    .nav-menu {
+        font-weight: bold;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 70%;
+        z-index: 100;
+
+        .navLink {
+            color: white;
+
+            &:hover, &.active {
+                color: var(--color-btn);
+            }
+        }
+        .cart-info {
+            width: 150px;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+
+            .cart-info-price {
+                color: white;
+            }
+            .cart-info-count {
+                position: relative;
+                top: -10px;
+                left: -10px;
+                max-width: 140px;
+                max-height: 40px;
+                border: solid 1px var(--color-btn);
+                border-radius: 50%;
+                text-align: center;
+
+                color: black;
+                background: var(--color-btn);
+            }
+        }
+    }
+    .hamburger {
+        display: none;
+        cursor: pointer;
+        width: 25px;
+
+        .bar {
+            display: block;
+            width: 25px;
+            height: 3px;
+            margin: 5px auto;
+            -webkit-transition: all 0.3s ease-in-out;
+            transition: var(--transition);
+            background-color: white;
+        }
+    }
+}
+
+/* ----- MEDIA QUERIES ----- */
+@media screen and (max-width: 740px) {
+    .navbar {
+        .logo {
+            width: 80%;
+        }
+        .nav-menu {
+            position: fixed;
+            top: 0;
+            right: -110%;
+            flex-direction: column;
+            align-items: center;
+            background-color: rgba(38, 38, 38, 0.98);
+            width: 100%;
+            height: 100%;
+            margin: 0;
+
+            transition: var(--transition);
+            padding-top: 70%;
+            padding-bottom: 70%;
+
+            z-index: 100;
+
+            &.active {
+                right: 0;
+            }
+            .nav-item {
+                margin: 16px 0;
+            }
+            .cart-info {
+                width: 10px;
+                justify-content: center;
+
+                .cart-info-price {
+                    display: none;
+                }
+                .cart-info-count {
+                    display: none;
+                }
+            }
+        }
+        .hamburger {
+            margin-right: 15px;
+            display: block;
+            z-index: 101;
+            width: 25px;
+
+            &.active {
+                position: fixed;
+                right: 16px;
+                transform: rotate(180deg);
+                transition: var(--transition);
+
+                .bar:nth-child(1) {
+                    transform: translateY(8px) rotate(45deg);
+                }
+                .bar:nth-child(2) {
+                    opacity: 0;
+                }
+                .bar:nth-child(3) {
+                    transform: translateY(-8px) rotate(-45deg);
+                }
+            }
+            &:hover .bar {
+                background: var(--color-btn);
+            }
+        }
+    }
+}
+
+
+/*.input-search {*/
+/*    height: 2rem;*/
+/*    padding: 2px 30px;*/
+/*    background: none;*/
+/*    color: #fff;*/
+/*    margin-left: 0.1rem;*/
+/*    font-size: 16px;*/
+/*    border: 2px solid transparent;*/
+/*}*/
+
+/*.input-search:focus {*/
+/*    border: 2px solid var(--color-first);*/
+/*    border-radius: 0.5rem;*/
+/*}*/
+
+/*.searchBox {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    width: 400px;*/
+/*}*/
+
+/*.icon-search {*/
+/*    position: relative;*/
+/*    left: 30px;*/
+/*}*/
+/*.icon-search-del {*/
+/*    position: relative;*/
+/*    left: -30px;*/
+/*    cursor: pointer;*/
+/*    opacity: 0.2;*/
+/*    transition: all 0.1s ease;*/
+/*}*/
+/*.icon-search-del:hover {*/
+/*    opacity: 0.8;*/
+/*}*/
