@@ -6,46 +6,32 @@ import { Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import './categories.scss';
 
 const Categories = () => {
     const [categories, setCategories] = useState([])
 
     useEffect(() =>{
-        axios.get('http://localhost:3000/categories.json')
+        axios.get('https://628f86d60e69410599de1f6f.mockapi.io/categories')
             .then(( {data} ) => {
                 setCategories(data.categories)
             })
     }, [])
 
-
-    // Отслеживание ширины экрана для слайдера КАТЕГОРИЙ
-    // const [widthScreen, setWidthScreen] = useState(window.screen.width)
-    // const getWidthScreen = () => {
-    //     window.addEventListener(`resize`, event => {
-    //         setWidthScreen(window.screen.width);
-    //         console.log(widthScreen)
-    //     }, false);
-    //     return widthScreen
-    // }
-    // getWidthScreen()
-
     return (
         <section className='container'>
             <Swiper
-                    modules={[Pagination]}
-                    spaceBetween={140}
-                    pagination={{ clickable: true }}
-                    breakpoints={{
-                        0 : {
-                            width: 0,
-                            slidesPerView: 1,
-                        },
-                        1000 : {
-                            width: 1000,
-                            slidesPerView: 3,
-                        }
-                    }}
+                slidesPerView={1}
+                spaceBetween={10}
+                pagination={{
+                    clickable: true,
+                }}
+                breakpoints={{
+                    1100: {
+                        slidesPerView: 3,
+                        spaceBetween: 23,
+                    },
+                }}
+                modules={[Pagination]}
             >
                     {categories.map(catItem =>
                         <SwiperSlide key={catItem.id} >
