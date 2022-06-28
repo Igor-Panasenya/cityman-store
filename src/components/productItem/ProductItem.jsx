@@ -4,7 +4,6 @@ import {ImPriceTag} from 'react-icons/im';
 import {NavLink} from 'react-router-dom';
 import {useDispatch} from "react-redux";
 import {setProduct} from "../../redux/slices/productSlice";
-import Button from "../UI/button/Button";
 
 const ProductItem = (props) => {
 

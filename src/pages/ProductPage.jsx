@@ -108,7 +108,7 @@ const ProductPage = () => {
 
             <div className="line"></div>
 
-            <MainProducts />
+            {/*<MainProducts />*/}
 
             {/*<SimilarProducts />*/}
 
