@@ -9,7 +9,7 @@ const MainProducts = () => {
         {
             "id": "6-ties",
             "title": "TIE ORIENT FG",
-            "IMG": "/img/Categories/CategoryTies/tie6.jpg",
+            "IMG": "../../../img/Categories/CategoryTies/tie6.jpg",
             "price": "7.18",
             "category": "ties"
         },
