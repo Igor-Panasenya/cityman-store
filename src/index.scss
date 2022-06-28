@@ -336,35 +336,35 @@ body {
     }
 }
 @media screen and (max-width: 600px) {
-    .boxImages {
-        .mainIMG {
-            width: 280px;
-            height: 280px;
-            margin: 0 auto;
-        }
-        .boxImages-icons {
-            max-width: 280px;
-            margin: 1rem auto;
+    .mainInfoProduct {
+        .boxImages {
+            .mainIMG {
+                width: 280px;
+                height: 280px;
+                margin: 0 auto;
+            }
+            .boxImages-icons {
+                max-width: 280px;
+                margin: 1rem auto;
 
-            li {
-                width: 60px;
-                height: 60px;
+                li {
+                    width: 60px;
+                    height: 60px;
 
-                &.active {
-                    border: solid 2px var(--color-btn);
+                    &.active {
+                        border: solid 2px var(--color-btn);
+                    }
                 }
             }
         }
+        .infoProductContent {
+            h1 {
+                font-size: 40px;
+            }
 
-    }
-
-    .infoProductContent {
-        h1 {
-            font-size: 40px;
-        }
-
-        h3 {
-            font-size: 26px;
+            h3 {
+                font-size: 26px;
+            }
         }
     }
 
