@@ -30,7 +30,7 @@
     content: '';
     width: 20px;
     height: 20px;
-    background-image: url('/public/img/icon-arrow.png');
+    background-image: url('../../../img/icon-arrow.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -68,7 +68,7 @@
     top: 50%;
     left: 50%;
     content: '';
-    background-image: url('/public/img/icon-check.png');
+    background-image: url('../../..//img/icon-check.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

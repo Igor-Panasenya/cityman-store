@@ -3,6 +3,7 @@ import './header.scss';
 import {NavLink} from "react-router-dom";
 import {BsBasket3} from 'react-icons/bs';
 import {useSelector} from "react-redux";
+import Logo from '../../img/header/logo.png';
 
 const Header = () => {
 
@@ -17,7 +18,7 @@ const Header = () => {
             <div className="navbar">
 
                     <NavLink onClick={() => window.scroll(0,0)} className="navLink" to="/">
-                        <img className='logo' src='./img/header/logo.png' alt="cityman"/>
+                        <img className='logo' src={Logo}alt="cityman"/>
                     </NavLink>
 
                     <ul
@@ -71,7 +72,7 @@ const Header = () => {
                         onChange={(e) => setSearchQuery(e.target.value)}
                         className="input-search"
                         type="text"
-                        placeholder='Search in all products'
+                        placeholder='search in all products'
                     />
                     {
                         searchQuery &&
