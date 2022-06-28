@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import './header.scss';
 import {NavLink} from "react-router-dom";
-import LOGO from '../../img/logo.png';
 import {BsBasket3} from 'react-icons/bs';
 import {useSelector} from "react-redux";
 
@@ -18,7 +17,7 @@ const Header = () => {
             <div className="navbar">
 
                     <NavLink onClick={() => window.scroll(0,0)} className="navLink" to="/">
-                        <img className='logo' src={LOGO} alt="cityman"/>
+                        <img className='logo' src='./img/header/logo.png' alt="cityman"/>
                     </NavLink>
 
                     <ul
