@@ -16,7 +16,7 @@ function App() {
             <Route path="/" element={<Layout />}>
                 <Route index element={<HomePage />} />
                 <Route path='categories/:title' element={<CategoryPage />} />
-                <Route path='categories/:category/:id' element={<ProductPage />} />
+                <Route path='categories/:category/:id-:title' element={<ProductPage />} />
                 <Route path='about' element={<AboutPage />} />
                 <Route path='basket' element={<CartPage />} />
                 <Route path='*' element={<NotFoundPage />} />

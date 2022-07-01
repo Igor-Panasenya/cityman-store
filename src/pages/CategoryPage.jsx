@@ -7,28 +7,25 @@ import Sort from "../components/UI/sort/Sort";
 import ProductItem from "../components/productItem/ProductItem";
 import React, {useEffect, useState} from "react";
 import axios from "axios";
-import Skeleton from "../components/UI/skeleton/Skeleton";
-import Pagination from "../components/UI/pagination/Pagination";
+import SkeletonProducts from "../components/UI/skeletonProducts/SkeletonProducts";
 import {setSort} from "../redux/slices/sortSlice";
-import WidgetCheckbox from "../components/UI/widgets/WidgetCheckbox";
+import ProductsService from "../API/ProductsService";
+import {useFetching} from "../hooks/useFetching";
+import Widgets from "../components/UI/widgets/Widgets";
 
 const CategoryPage = () => {
 
     const category = useSelector(state => state.category.currentCategory)
-
     const [products, setProducts] = useState([])
-    const [isLoading, setIsLoading] = useState(true)
 
     useEffect(() => {
-        axios.get(`https://628f86d60e69410599de1f6f.mockapi.io/${category.title}`)
-            .then(response => {
-                setProducts(response.data)
-                setIsLoading(false)
-            }).catch(function(e) {
-                console.log('Ошибка')
-            setIsLoading(false)
-        })
+        fetchProducts();
     }, [])
+
+    const [fetchProducts, isLoading, error] = useFetching(async () => {
+        const Products = await ProductsService.getProducts(category.title);
+        setProducts(Products);
+    })
 
     const [searchQuery, setSearchQuery] = useState('')
 
@@ -53,14 +50,7 @@ const CategoryPage = () => {
         dispatch(setSort(sortList[0]))
     }, [category])
 
-    if(!category) return null
-
-    // ВИДЖЕТЫ
-    const brands = ['Casio', 'Tissot', 'Orient', 'Q&Q', 'Seiko'];
-    const mechanisms = ['Wrist Watch', 'Clock set', 'Set with jewelry', 'Pocket watch'];
-    const housings = ['Stainless steel', 'Plastic', 'Gold', 'Ceramics', 'Brass'];
-    const braslets = ['Metal', 'Rubber', 'Leather', 'Plastic'];
-
+    // if(!category) return null
 
     return (
         <div className="container">
@@ -75,22 +65,15 @@ const CategoryPage = () => {
             <div className='attributes'>
                 <Search searchQuery={searchQuery} setSearchQuery={setSearchQuery}/>
                 <Sort sortList={sortList} sort={sort}/>
-
-                {/*ВИДЖЕТЫ*/}
-                {/*<div className='widgets'>*/}
-                {/*    <WidgetCheckbox title='Brand' items={brands}/>*/}
-                {/*    <WidgetCheckbox title='Mechanism' items={mechanisms}/>*/}
-                {/*    <WidgetCheckbox title='Housings' items={housings}/>*/}
-                {/*    <WidgetCheckbox title='Braslet' items={braslets}/>*/}
-                {/*</div>*/}
-
             </div>
+
+            {error && <h2>Произошла ошибка {error} </h2>}
 
             <div className="productsNet">
 
                 {
                     isLoading
-                        ? [...new Array(8)].map((_, index) => <Skeleton key={index}/>)
+                        ? [...new Array(8)].map((_, index) => <SkeletonProducts key={index}/>)
                         : products.filter((product) => {
                             return product.title.toLowerCase().includes(searchQuery.toLowerCase())
                         }).map(Product =>

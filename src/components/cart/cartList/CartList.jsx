@@ -1,8 +1,14 @@
 import React from 'react';
+import {
+    CSSTransition,
+    TransitionGroup,
+    Transition,
+} from 'react-transition-group';
 import CartItem from "../cartItem/CartItem";
 import {Link} from "react-router-dom";
 import {useSelector} from "react-redux";
 import './cartList.scss';
+import './transition.css';
 import Button from "../../UI/button/Button";
 
 const CartList = ({productsCart}) => {
@@ -12,11 +18,20 @@ const CartList = ({productsCart}) => {
 
     return (
         <>
-            {productsCart.map(product =>
-            <>
-                <CartItem product={product} key={product.id}/>
-                <div className='cart-hr'></div>
-            </>)}
+            <TransitionGroup>
+                {productsCart.map(product =>
+                <>
+                    <CSSTransition
+                        key={product.id}
+                        timeout={500}
+                        classNames="product"
+                    >
+                        <CartItem product={product}/>
+
+                    </CSSTransition>
+                    <div className='cart-hr'></div>
+                </>)}
+            </TransitionGroup>
 
             <div className='grandTotal'>
                 <p>Grand total</p>

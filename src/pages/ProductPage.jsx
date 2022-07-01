@@ -3,10 +3,8 @@ import {BsBasket3Fill} from 'react-icons/bs'
 import {BsCartPlus} from "react-icons/bs";
 import {useDispatch, useSelector} from "react-redux";
 import {addItemCart} from "../redux/slices/cartSlice";
-import MainProducts from "../components/mainProducts/MainProducts";
 
 const ProductPage = () => {
-
     const product = useSelector(state => state.product.currentProduct)
     const items = useSelector(state => state.cart);
     const dispatch = useDispatch();
@@ -17,7 +15,6 @@ const ProductPage = () => {
         '/img/productPagePhoto/sample3.jpg',
         '/img/productPagePhoto/sample4.jpg',
     ]
-
     const [getActivePhoto, setGetActivePhoto] = useState(photos[0]);
     const [activePhoto, setActivePhoto] = useState(0);
     const onSelectPhoto = (index) => {
@@ -25,14 +22,12 @@ const ProductPage = () => {
         setGetActivePhoto(photos[index]);
     }
 
-
     // КНОПКА ДОБАВЛЕНИЯ В КОРЗИНУ
     const [isAddedCart, setIsAddedCart] = useState(product.addCart)
     const handleClickBuy = () => {
         dispatch(addItemCart(product));
         setIsAddedCart(true);
     }
-
 
     useEffect(() => {
         const findItem = items.items.find(item => item.id === product.id);
@@ -105,12 +100,6 @@ const ProductPage = () => {
                     <li><p>Ipsum Lorem Lorem</p><span> 900 s</span> </li>
                 </ul>
             </div>
-
-            <div className="line"></div>
-
-            {/*<MainProducts />*/}
-
-            {/*<SimilarProducts />*/}
 
             <div className="line"></div>
 

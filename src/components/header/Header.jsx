@@ -41,19 +41,21 @@ const Header = () => {
                             </a>
                         </li>
                         <li className="nav-item">
-                            <div className='cart-info'>
-                                <NavLink onClick={() => window.scroll(0,0)} className="navLink navLink-basket" to="/basket">
-                                    <BsBasket3 size={20}/>
-                                    {items.length > 0 &&
-                                        <>
-                                            <span className='cart-info-count'> { totalCount } </span>
-                                            <span className='cart-info-price'> $ { totalPriceFixed } </span>
-                                        </>
-                                    }
-                                </NavLink>
-                            </div>
+
                         </li>
                     </ul>
+
+                <div className='cart-info'>
+                    <NavLink onClick={() => window.scroll(0,0)} className="navLink-basket" to="/basket">
+                        <BsBasket3 size={20}/>
+                        {items.length > 0 &&
+                            <>
+                                <span className='cart-info-count'> { totalCount } </span>
+                                <span className='cart-info-price'> $ { totalPriceFixed } </span>
+                            </>
+                        }
+                    </NavLink>
+                </div>
 
                     <div
                         onClick={() => setIsActiveNavbar(!isActiveNavbar)}

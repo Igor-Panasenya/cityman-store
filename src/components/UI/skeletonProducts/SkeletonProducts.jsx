@@ -1,7 +1,7 @@
 import React from "react"
 import ContentLoader from "react-content-loader"
 
-const Skeleton = (props) => (
+const SkeletonProducts = (props) => (
     <ContentLoader
         speed={2}
         width={260}
@@ -25,4 +25,4 @@ const Skeleton = (props) => (
     </ContentLoader>
 )
 
-export default Skeleton
+export default SkeletonProducts

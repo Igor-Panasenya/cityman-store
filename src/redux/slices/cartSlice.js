@@ -13,14 +13,14 @@ const cartSlice = createSlice({
                 return sum + (Number(item.price) * item.count)}, 0);
         },
         removeItemCart: (state, action) => {
-            if (window.confirm("Are you sure you want to remove an item from your shopping cart ?")) {
+            if (window.confirm("Вы действительно хотите удалить элемент из корзины ?")) {
                 state.items = state.items.filter(item => item.id !== action.payload.id);
                 state.totalPrice = state.items.reduce(function(sum, item) {
                     return sum + (Number(item.price) * item.count)}, 0);
             }
         },
         clearCart: (state) => {
-            if (window.confirm("Are you sure you want to empty the cart ?")) {
+            if (window.confirm("Вы действительно хотите очистить корзину ?")) {
                 state.items = [];
                 state.totalPrice = 0;
             }
